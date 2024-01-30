@@ -10,6 +10,21 @@ TagManager:
   - USA
   - Canada
   - Mexico
+  - Volcano
+  - Africa
+  - Asia
+  - Europe
+  - NorthAmerica
+  - Australia
+  - SouthAmerica
+  - Antarctica
+  - Argentina
+  - Brazil
+  - Greenland
+  - Russia
+  - SaudiArabia
+  - Sudan
+  - AustraliaC
   layers:
   - Default
   - TransparentFX
