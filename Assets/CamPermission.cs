@@ -7,7 +7,6 @@ using UnityEngine.Android;
 
 public class CameraPermission : MonoBehaviour
 {
-    // Use this for initialization
     void Start()
     {
 #if PLATFORM_ANDROID

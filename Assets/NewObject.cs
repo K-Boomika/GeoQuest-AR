@@ -23,7 +23,6 @@ public class NewObject : MonoBehaviour
 
         Vector3 popupPosition = earth.transform.position;
 
-        // Set the position in world space
         newObject.transform.position = popupPosition;
         earth.SetActive(false);
         newObject.SetActive(true);

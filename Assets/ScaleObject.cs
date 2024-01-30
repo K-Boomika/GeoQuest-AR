@@ -4,8 +4,8 @@ public class ScaleObject : MonoBehaviour
 {
     public string tagToScale = "Earth";
     public float scaleSpeed = 10f;
-    public float maxScale = 150f;  // Maximum scale limit
-    public float minScale = 70f;  // Minimum scale limit
+    public float maxScale = 150f; 
+    public float minScale = 50f;  
 
     public void ClickButtonScale(string scale)
     {
@@ -13,21 +13,19 @@ public class ScaleObject : MonoBehaviour
 
         float scaleChange;
 
-        // Determine the scale change based on the input string
         switch (scale)
         {
             case "up":
-                scaleChange = scaleSpeed;  // Increasing scale
+                scaleChange = scaleSpeed;  
                 break;
             case "down":
-                scaleChange = -scaleSpeed; // Decreasing scale
+                scaleChange = -scaleSpeed; 
                 break;
             default:
-                scaleChange = 0; // No scale change
+                scaleChange = 0; 
                 break;
         }
 
-        // Scale each object found
         foreach (GameObject obj in objectsWithTag)
         {
             Vector3 newScale = obj.transform.localScale + new Vector3(scaleChange, scaleChange, scaleChange);
